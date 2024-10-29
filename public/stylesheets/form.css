@@ -11,6 +11,8 @@ body {
     background: rgb(175, 175, 184);
     min-height: 100vh;
     align-items: center;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header {

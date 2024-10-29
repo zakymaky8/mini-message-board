@@ -11,6 +11,8 @@ body {
     background: rgb(175, 175, 184);
     min-height: 100vh;
     align-items: center;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header {
@@ -31,11 +33,16 @@ body {
     gap: 20px;
     min-width: 50%;
     border-radius: 15px;
+    background: rgb(58, 117, 73, 0.6);
 }
 
 .btn-date {
     display: flex;
     justify-content: space-between;
+}
+.btn-date > span {
+    font-size: 11px;
+    color: blanchedalmond;
 }
 
 button {

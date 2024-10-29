@@ -9,7 +9,9 @@ body {
     flex-direction: column;
     gap: 20px;
     background: rgb(175, 175, 184);
+    font-style: italic;
     min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .messages {
