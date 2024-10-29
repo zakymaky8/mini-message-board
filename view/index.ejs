@@ -24,7 +24,7 @@
                 <h2><%= capitalize(message.user) %></h2>
                 <p><%= message.text %></p>
                 <div class="btn-date">
-                    <span><%= message.added.toLocaleDateString() %></span>
+                    <span><%= message.added.toLocaleDateString() + " " + " " + " " + message.added.toLocaleTimeString() %></span>
                     <button onclick="window.location.href='/message/<%= message.id %>'">Open to detail</button>
                 </div>
             </div>

@@ -15,7 +15,7 @@
         <h2><%=message.user %></h2>
         <p><%= message.text %> </p>
         <div class="btn-date">
-            <span><%= message.added.toLocaleDateString() %></span>
+            <span><%= message.added.toLocaleDateString() +  " " + " " + " "  + message.added.toLocaleTimeString() %></span>
             <button onclick="window.location.href='/'">Back</button>
         </div>
     </div>
