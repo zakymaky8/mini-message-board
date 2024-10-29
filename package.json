@@ -1,0 +1,17 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "Mini message board built using express js, ejs( template engine ), and other packages along",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch app"
+  },
+  "keywords": [],
+  "author": "zekaryas",
+  "license": "zekaryas",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0"
+  }
+}
