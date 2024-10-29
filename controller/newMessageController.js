@@ -1,5 +1,5 @@
 module.exports = {
     getNewMessagePage: (req, res) => {
-        res.send("New Message")
+        res.render("form", { title: "Mini Messageboard"})
     }
 }
