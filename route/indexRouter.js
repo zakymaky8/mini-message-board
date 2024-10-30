@@ -29,12 +29,6 @@ indexRouter.post("/new", (req, res) => {
   res.redirect("/");
 })
 
-indexRouter.delete("/message/:msgId", ()=> {
-  const { msgId } = req.params;
-  messages = messages.filter(message => message.id !== Number(msgId))
-  res.redirect("/")
-})
-
 indexRouter.get("/message/:msgId", asyncHandler( async (req, res) => {
   const { msgId } = req.params;
 
