@@ -3,15 +3,6 @@
     return word[0].toUpperCase() + word.slice(1).toLowerCase();
  } %>
 
- <!-- <% async function deleteItem(id) {
-    const res = await fetch("/message/" + id, {
-        mode: "cors",
-        method: "DELETE"
-    });
-    const data = await res,json();
-    console.log(`Message with id ${id} has been deleted`)
- } %> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +26,6 @@
                 <div class="btn-date">
                     <span><%= message.added.toLocaleDateString() + " " + " " + " " + message.added.toLocaleTimeString() %></span>
                     <button onclick="window.location.href='/message/<%= message.id %>'">Open to detail</button>
-                    <!-- <button onclick="deleteItem(message.id)">X</button> -->
                 </div>
             </div>
         <% }) %>
