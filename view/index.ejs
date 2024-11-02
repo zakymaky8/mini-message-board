@@ -17,18 +17,21 @@
         <button onclick="window.location.href = '/new'">Add New Message</button>
     </header>
     <div class="messages">
+        <% if (messages.length) { %>
         <h1>Messages</h1>
-
-        <% messages.map(message => { %>
-            <div class="message">
-                <h2><%= capitalize(message.user) %></h2>
-                <p><%= message.text %></p>
-                <div class="btn-date">
-                    <span><%= message.added.toLocaleDateString() + " " + " " + " " + message.added.toLocaleTimeString() %></span>
-                    <button onclick="window.location.href='/message/<%= message.id %>'">Open to detail</button>
+            <% messages.map(message => { %>
+                <div class="message">
+                    <h2><%= capitalize(message.author) %></h2>
+                    <p><%= message.message %></p>
+                    <div class="btn-date">
+                        <span><%= message.added.toLocaleDateString() + " " + " " + " " + message.added.toLocaleTimeString() %></span>
+                        <button onclick="window.location.href='/message/<%= message.id %>'">Open to detail</button>
+                    </div>
                 </div>
-            </div>
-        <% }) %>
+            <% }) %>
+        <% } else { %>
+            <h3>No messages yet!</h3>
+        <% } %>
     </div>
 </body>
 </html>

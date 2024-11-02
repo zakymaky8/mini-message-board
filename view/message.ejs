@@ -12,10 +12,10 @@
     </header>
     <h2>Message Detail</h2>
     <div class="details">
-        <h2><%=message.user %></h2>
-        <p><%= message.text %> </p>
+        <h2><%=message[0].author %></h2>
+        <p><%= message[0].message %> </p>
         <div class="btn-date">
-            <span><%= message.added.toLocaleDateString() +  " " + " " + " "  + message.added.toLocaleTimeString() %></span>
+            <span><%= message[0].added.toLocaleDateString() +  " " + " " + " "  + message[0].added.toLocaleTimeString() %></span>
             <button onclick="window.location.href='/'">Back</button>
         </div>
     </div>
